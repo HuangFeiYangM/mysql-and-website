@@ -1,0 +1,37 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Vehicle Management</h1>
+            <div id="auth-buttons">
+                <button id="login-btn">Login</button>
+                <button id="register-btn">Register</button>
+                <button id="logout-btn" style="display:none">Logout</button>
+            </div>
+        </header>
+
+        <div id="content">
+            <!-- 动态内容将在这里加载 -->
+        </div>
+    </div>
+
+    <!-- 模态框 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
